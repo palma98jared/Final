@@ -68,8 +68,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="GUI\AutorNuevo.aspx" />
     <Content Include="GUI\busquedas.aspx" />
+    <Content Include="GUI\CapituloNuevo.aspx" />
+    <Content Include="GUI\Estadistica.aspx" />
     <Content Include="GUI\LogIn.aspx" />
+    <Content Include="GUI\NewPost.aspx" />
     <Content Include="index.aspx" />
     <Content Include="RESOURCES\css\ajax-loader.gif" />
     <Content Include="RESOURCES\css\animate.css" />
@@ -109,6 +113,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="GUI\AutorNuevo.aspx.cs">
+      <DependentUpon>AutorNuevo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\AutorNuevo.aspx.designer.cs">
+      <DependentUpon>AutorNuevo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="GUI\busquedas.aspx.cs">
       <DependentUpon>busquedas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -116,12 +127,33 @@
     <Compile Include="GUI\busquedas.aspx.designer.cs">
       <DependentUpon>busquedas.aspx</DependentUpon>
     </Compile>
+    <Compile Include="GUI\CapituloNuevo.aspx.cs">
+      <DependentUpon>CapituloNuevo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\CapituloNuevo.aspx.designer.cs">
+      <DependentUpon>CapituloNuevo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Estadistica.aspx.cs">
+      <DependentUpon>Estadistica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Estadistica.aspx.designer.cs">
+      <DependentUpon>Estadistica.aspx</DependentUpon>
+    </Compile>
     <Compile Include="GUI\LogIn.aspx.cs">
       <DependentUpon>LogIn.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="GUI\LogIn.aspx.designer.cs">
       <DependentUpon>LogIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\NewPost.aspx.cs">
+      <DependentUpon>NewPost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\NewPost.aspx.designer.cs">
+      <DependentUpon>NewPost.aspx</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
