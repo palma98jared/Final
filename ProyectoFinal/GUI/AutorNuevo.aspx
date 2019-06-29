@@ -1,5 +1,18 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MASTERPAGE/MAESTRA.Master" AutoEventWireup="true" CodeBehind="AutorNuevo.aspx.cs" Inherits="ProyectoFinal.GUI.AutorNuevo" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script type="text/javascript">
+// Call carousel manually
+$('#MyCarousel();
+
+// Go to the previous item
+$("#prevBtn").click(function(){
+    $("#myCarousel").carousel("prev");
+});
+// Go to the previous item
+$("#nextBtn").click(function(){
+    $("#myCarousel").carousel("next");
+});
+</script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="row">

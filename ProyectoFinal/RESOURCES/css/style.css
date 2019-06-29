@@ -41,6 +41,20 @@
   box-sizing: border-box;
 }
 
+degree{
+    float:left;
+    width:100%;
+    height:50px;
+    background-position:center;
+}
+
+.degree{
+    background:-moz-linear-gradient(top, #003366, #ffffff);
+    filter:alpha(opacy=100, finishopacy=0, style=1, startx=0, starty=0)
+}
+
+
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
