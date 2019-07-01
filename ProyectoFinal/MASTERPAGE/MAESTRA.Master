@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="../resources/css/icomoon.css">
     <link rel="stylesheet" href="../resources/css/style.css">
     <link href="../RESOURCES/css/style.css" rel="stylesheet" />
+	<link href="../RESOURCES/css/css/Estilos.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>

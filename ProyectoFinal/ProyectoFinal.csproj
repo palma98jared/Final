@@ -84,6 +84,7 @@
     <Content Include="RESOURCES\css\bootstrap\bootstrap-grid.css" />
     <Content Include="RESOURCES\css\bootstrap\bootstrap-reboot.css" />
     <Content Include="RESOURCES\css\css\bootstrap-reboot.css" />
+    <Content Include="RESOURCES\css\css\Estilos.css" />
     <Content Include="RESOURCES\css\css\mixins\_text-hide.css" />
     <Content Include="RESOURCES\css\flaticon.css" />
     <Content Include="RESOURCES\css\icomoon.css" />

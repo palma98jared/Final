@@ -19,7 +19,7 @@
 					<br />
 					<br />
 					<asp:Label ID="lbl_PasswordLogin" runat="server" Text="Contraseña"></asp:Label>
-					<asp:TextBox ID="txtPassLogin" style="margin-left:63px" runat="server" ></asp:TextBox>
+					<asp:TextBox ID="txtPassLogin" style="margin-left:63px" Type="Password" runat="server" ></asp:TextBox>
 					<br />
 					<br />
 					<asp:Button ID="btn_Iniciar" CssClass="btn btn-info" runat="server" Text="Iniciar Sesion" OnClick="btn_Iniciar_Click" />
