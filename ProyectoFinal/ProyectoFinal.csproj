@@ -74,7 +74,9 @@
     <Content Include="GUI\Estadistica.aspx" />
     <Content Include="GUI\LogIn.aspx" />
     <Content Include="GUI\NewPost.aspx" />
-    <Content Include="index.aspx" />
+    <Content Include="GUI\index.aspx" />
+    <Content Include="GUI\Perfil.aspx" />
+    <Content Include="GUI\VerificarUsuario.aspx" />
     <Content Include="RESOURCES\css\ajax-loader.gif" />
     <Content Include="RESOURCES\css\animate.css" />
     <Content Include="RESOURCES\css\aos.css" />
@@ -110,6 +112,11 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BO\Administrador_BO.cs" />
+    <Compile Include="BO\Genero_BO.cs" />
+    <Compile Include="BO\Usuario_BO.cs" />
+    <Compile Include="DAO\Conexion.cs" />
+    <Compile Include="DAO\Usuario_DAO.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -155,12 +162,26 @@
     <Compile Include="GUI\NewPost.aspx.designer.cs">
       <DependentUpon>NewPost.aspx</DependentUpon>
     </Compile>
-    <Compile Include="index.aspx.cs">
+    <Compile Include="GUI\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="index.aspx.designer.cs">
+    <Compile Include="GUI\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Perfil.aspx.cs">
+      <DependentUpon>Perfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Perfil.aspx.designer.cs">
+      <DependentUpon>Perfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\VerificarUsuario.aspx.cs">
+      <DependentUpon>VerificarUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\VerificarUsuario.aspx.designer.cs">
+      <DependentUpon>VerificarUsuario.aspx</DependentUpon>
     </Compile>
     <Compile Include="MASTERPAGE\MAESTRA.Master.cs">
       <DependentUpon>MAESTRA.Master</DependentUpon>
@@ -187,9 +208,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="BO\" />
-    <Folder Include="DAO\" />
     <Folder Include="Models\" />
+    <Folder Include="RESOURCES\fotos_usuarios\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
