@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="../resources/css/icomoon.css">
     <link rel="stylesheet" href="../resources/css/style.css">
     <link href="../RESOURCES/css/style.css" rel="stylesheet" />
+	<link href="../RESOURCES/css/css/Estilos.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -39,13 +40,12 @@
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav nav ml-auto">
 	          <li class="nav-item"><a href="../GUI/AutorNuevo.aspx" class="nav-link"><span>Registrarse</span></a></li>
-	          <li class="nav-item"><a href="../GUI/busquedas.aspx" class="nav-link"><span>Services</span></a></li>
-	          <li class="nav-item"><a href="../GUI/CapituloNuevo.aspx" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="../GUI/busquedas.aspx" class="nav-link"><span>Busquedas</span></a></li>
+	          <li class="nav-item"><a href="../GUI/CapituloNuevo.aspx" class="nav-link"><span>Capitulo Nuevo</span></a></li>
 	          <li class="nav-item"><a href="../GUI/Estadistica.aspx" class="nav-link"><span>Destination</span></a></li>
-	          <li class="nav-item"><a href="../GUI/LogIn.aspx" class="nav-link"><span>Hotel</span></a></li>
-	          <li class="nav-item"><a href="../GUI/NewPost.aspx" class="nav-link"><span>Restaurant</span></a></li>
 	          <li class="nav-item"><a href="../GUI/Perfil.aspx" class="nav-link"><span>Perfil</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	          <li class="nav-item"><a href="../GUI/NewPost.aspx" class="nav-link"><span>Nueva Historia</span></a></li>
+	          <li class="nav-item"><a href="../GUI/LogIn.aspx" class="nav-link btn-secondary"><span>Login</span></a></li>
 	        </ul>
 	      </div>
 	    </div>

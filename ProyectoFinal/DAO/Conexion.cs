@@ -17,7 +17,7 @@ namespace ProyectoFinal.DAO
 		public SqlConnection establecerConexion()
 		{
 			//datos para la conexión usuario, bd, etc.
-			string cs = "Data Source=LAPTOP-VQUIFEUE;Initial Catalog=ProyectoLibro;Integrated Security=True";
+			string cs = "Data Source=(localdb)\\servidor;Initial Catalog=ProyectoLibro;Integrated Security=True";
 			con = new SqlConnection(cs); //instancia el objeto para la conexion a la bd
 			return con; //el objeto
 		}
