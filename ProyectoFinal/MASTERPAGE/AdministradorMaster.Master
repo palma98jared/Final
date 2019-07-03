@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MAESTRA.master.cs" Inherits="ProyectoFinal.MASTERPAGE.MAESTRA" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdministradorMaster.master.cs" Inherits="ProyectoFinal.MASTERPAGE.AdministradorMaster" %>
 
 <!DOCTYPE html>
 
@@ -6,8 +6,9 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
-     
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
@@ -30,8 +31,6 @@
 	<script src="../RESOURCES/js/bootstrap.js"></script>
 	<script src="../RESOURCES/js/jquery-3.4.1.min.js"></script>
 	<link href="../RESOURCES/css/bootstrap.min.css" rel="stylesheet" />
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
@@ -47,18 +46,35 @@
 	          <li class="nav-item"><a href="#" class="nav-link"><span></span></a></li>
 	          <li class="nav-item"><a href="#" class="nav-link"><span></span></a></li>
 	          <li class="nav-item"><a href="#" class="nav-link"><span></span></a></li>
-	          <li class="nav-item"><a href="../GUI/Perfil.aspx" class="nav-link"><span></span>Perfil</a></li>
+	          <li class="nav-item"><a href="../GUI/PerfilAdministrador.aspx" class="nav-link"><span></span>Perfil</a></li>
 	          <li class="nav-item"><a href="../GUI/LogIn.aspx" class="nav-link"><span>Iniciar Sesion</span></a></li>
 	          <li class="nav-item"><a href="../GUI/AutorNuevo.aspx" class="nav-link"><span>Registrarse</span></a></li>
-	        </ul
+	        </ul>
 	      </div>
 	    </div>
 	  </nav>
     <form id="form1" runat="server">
+		<br />
         <div class="degree">
+			<div class="row">
+	<div class="col-md-3">
+		<aside>
+			<nav class="list-group">
+						<a href="#" class="list-group-item list-group-item-action disabled titulomenu">
+							Menu
+							</a>
+							<a href="AgregarAdministrador.aspx" class="list-group-item list-group-item-action">Agregar Administrador</a>
+							<a href="AgregarGenero.aspx" class="list-group-item list-group-item-action">Agregar genero</a>
+							<a href="#" class="list-group-item list-group-item-action"></a>
+							<a href="#" class="list-group-item list-group-item-action"></a>
+							<a href="#" class="list-group-item list-group-item-action"></a>
+				</nav>
+		</aside>
+	</div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
+		</div>
     </form>
        
     <!--cargar un script de loader-->

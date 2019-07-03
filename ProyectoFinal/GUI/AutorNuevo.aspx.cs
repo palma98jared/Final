@@ -65,6 +65,7 @@ namespace ProyectoFinal.GUI
 			txt_Telefono.Text = dgv_usuarios.SelectedRow.Cells[6].Text;
 			txt_SitioWeb.Text = dgv_usuarios.SelectedRow.Cells[7].Text;
 			txt_Municipio.Text = dgv_usuarios.SelectedRow.Cells[8].Text;
+			txt_Biografia.Text = dgv_usuarios.SelectedRow.Cells[10].Text;
 
 			txt_FotoUsuario.Text = "";
 			if (dgv_usuarios.SelectedRow.Cells[4].Text.Trim() != "")

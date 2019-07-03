@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MASTERPAGE/MAESTRA.Master" AutoEventWireup="true" CodeBehind="AutorNuevo.aspx.cs" Inherits="ProyectoFinal.GUI.AutorNuevo" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MASTERPAGE/MAESTRA.Master" EnableEventValidation="false" AutoEventWireup="true" CodeBehind="AutorNuevo.aspx.cs" Inherits="ProyectoFinal.GUI.AutorNuevo" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">

@@ -68,6 +68,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="GUI\AgregarAdministrador.aspx" />
+    <Content Include="GUI\AgregarGenero.aspx" />
     <Content Include="GUI\AutorNuevo.aspx" />
     <Content Include="GUI\busquedas.aspx" />
     <Content Include="GUI\CapituloNuevo.aspx" />
@@ -76,13 +78,14 @@
     <Content Include="GUI\NewPost.aspx" />
     <Content Include="GUI\index.aspx" />
     <Content Include="GUI\Perfil.aspx" />
-    <Content Include="GUI\VerificarUsuario.aspx" />
+    <Content Include="GUI\PerfilAdministrador.aspx" />
     <Content Include="RESOURCES\css\ajax-loader.gif" />
     <Content Include="RESOURCES\css\animate.css" />
     <Content Include="RESOURCES\css\aos.css" />
     <Content Include="RESOURCES\css\bootstrap.min.css" />
     <Content Include="RESOURCES\css\bootstrap\bootstrap-grid.css" />
     <Content Include="RESOURCES\css\bootstrap\bootstrap-reboot.css" />
+    <Content Include="RESOURCES\css\bootstrap\bootstrap.css" />
     <Content Include="RESOURCES\css\css\bootstrap-reboot.css" />
     <Content Include="RESOURCES\css\css\Estilos.css" />
     <Content Include="RESOURCES\css\css\mixins\_text-hide.css" />
@@ -94,10 +97,15 @@
     <Content Include="RESOURCES\css\owl.carousel.min.css" />
     <Content Include="RESOURCES\css\owl.theme.default.min.css" />
     <Content Include="RESOURCES\css\style.css" />
+    <Content Include="RESOURCES\Imagenes\BG.jpg" />
+    <Content Include="RESOURCES\Imagenes\CienciaFiccion.jpg" />
+    <Content Include="RESOURCES\Imagenes\Terror.jpg" />
     <Content Include="RESOURCES\js\aos.js" />
+    <Content Include="RESOURCES\js\bootstrap.js" />
     <Content Include="RESOURCES\js\bootstrap.min.js" />
     <Content Include="RESOURCES\js\google-map.js" />
     <Content Include="RESOURCES\js\jquery-3.2.1.min.js" />
+    <Content Include="RESOURCES\js\jquery-3.4.1.min.js" />
     <Content Include="RESOURCES\js\jquery-migrate-3.0.1.min.js" />
     <Content Include="RESOURCES\js\jquery.animateNumber.min.js" />
     <Content Include="RESOURCES\js\jquery.easing.1.3.js" />
@@ -116,10 +124,25 @@
     <Compile Include="BO\Administrador_BO.cs" />
     <Compile Include="BO\Genero_BO.cs" />
     <Compile Include="BO\Usuario_BO.cs" />
+    <Compile Include="DAO\Administrador_DAO.cs" />
     <Compile Include="DAO\Conexion.cs" />
     <Compile Include="DAO\Usuario_DAO.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\AgregarAdministrador.aspx.cs">
+      <DependentUpon>AgregarAdministrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\AgregarAdministrador.aspx.designer.cs">
+      <DependentUpon>AgregarAdministrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\AgregarGenero.aspx.cs">
+      <DependentUpon>AgregarGenero.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\AgregarGenero.aspx.designer.cs">
+      <DependentUpon>AgregarGenero.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\AutorNuevo.aspx.cs">
       <DependentUpon>AutorNuevo.aspx</DependentUpon>
@@ -177,12 +200,19 @@
     <Compile Include="GUI\Perfil.aspx.designer.cs">
       <DependentUpon>Perfil.aspx</DependentUpon>
     </Compile>
-    <Compile Include="GUI\VerificarUsuario.aspx.cs">
-      <DependentUpon>VerificarUsuario.aspx</DependentUpon>
+    <Compile Include="GUI\PerfilAdministrador.aspx.cs">
+      <DependentUpon>PerfilAdministrador.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="GUI\VerificarUsuario.aspx.designer.cs">
-      <DependentUpon>VerificarUsuario.aspx</DependentUpon>
+    <Compile Include="GUI\PerfilAdministrador.aspx.designer.cs">
+      <DependentUpon>PerfilAdministrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MASTERPAGE\AdministradorMaster.Master.cs">
+      <DependentUpon>AdministradorMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MASTERPAGE\AdministradorMaster.Master.designer.cs">
+      <DependentUpon>AdministradorMaster.Master</DependentUpon>
     </Compile>
     <Compile Include="MASTERPAGE\MAESTRA.Master.cs">
       <DependentUpon>MAESTRA.Master</DependentUpon>
@@ -195,6 +225,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MASTERPAGE\MAESTRA.Master" />
+    <Content Include="MASTERPAGE\AdministradorMaster.Master" />
     <None Include="packages.config" />
     <Content Include="RESOURCES\css\.DS_Store" />
     <Content Include="RESOURCES\css\bootstrap\.DS_Store" />

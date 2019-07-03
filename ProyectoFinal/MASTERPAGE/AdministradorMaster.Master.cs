@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace ProyectoFinal.GUI
+namespace ProyectoFinal.MASTERPAGE
 {
-	public partial class VerificarUsuario : System.Web.UI.Page
+	public partial class AdministradorMaster : System.Web.UI.MasterPage
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
