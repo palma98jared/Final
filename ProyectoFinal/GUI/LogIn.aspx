@@ -3,7 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 	<br /><br /><br />
-    <div class="row">
+    <div class="row FondoLogin">
         <div class="col-md-3"></div>
         <div class="col-md-6">
             

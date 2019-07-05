@@ -41,20 +41,6 @@
   box-sizing: border-box;
 }
 
-degree{
-    float:left;
-    width:100%;
-    height:50px;
-    background-position:center;
-}
-
-.degree{
-    background:-moz-linear-gradient(top, #003366, #ffffff);
-    filter:alpha(opacy=100, finishopacy=0, style=1, startx=0, starty=0)
-}
-
-
-
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -67,16 +53,14 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 }
 
 body {
-	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-	font-size: 1rem;
-	font-weight: 400;
-	line-height: 1.5;
-	color: #212529;
-	text-align: left;
-}
-.FondoLogin {
-	background-image: url('../Imagenes/BG.jpg');
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
 }
 
 [tabindex="-1"]:focus {
@@ -256,12 +240,11 @@ button,
 select,
 optgroup,
 textarea {
+  margin: 0;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-    margin-left: 0;
-    margin-right: 0;
-    }
+}
 
 button,
 input {
@@ -632,9 +615,6 @@ pre code {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-    top: -2px;
-    left: -5px;
-    height: 94px;
 }
 
 .col {
@@ -1532,6 +1512,7 @@ pre code {
 }
 
 .table {
+  width: 100%;
   margin-bottom: 1rem;
   color: #212529;
 }
@@ -2988,10 +2969,10 @@ fieldset:disabled a.btn {
 }
 
 .btn-lg, .btn-group-lg > .btn {
+  padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0.3rem;
-    width: 272px;
 }
 
 .btn-sm, .btn-group-sm > .btn {
@@ -5389,8 +5370,6 @@ a.badge-dark:focus, a.badge-dark.focus {
   color: #6c757d;
   pointer-events: none;
   background-color: #fff;
-    top: 0px;
-    left: 2px;
 }
 
 .list-group-item.active {
